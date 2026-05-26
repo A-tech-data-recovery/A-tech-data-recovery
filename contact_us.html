@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional data recovery, software installation, laptop repair, OS installation, and online IT support services.">
+    <meta name="keywords" content="data recovery, software solutions, laptop repair, OS installation, IT support">
+
+    <title>Contact_us A-Tech Solutions</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #050508;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+            position: relative;
+            padding: 40px 0;
+        }
+
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(25px);
+            opacity: 0.55;
+            z-index: 1;
+            animation: floatAnimation 12s infinite alternate ease-in-out;
+        }
+
+        .orb-1 {
+            width: 380px;
+            height: 380px;
+            background: linear-gradient(135deg, #00f2fe, #4facfe);
+            top: -60px;
+            left: -60px;
+            animation-duration: 14s;
+        }
+
+        .orb-2 {
+            width: 420px;
+            height: 420px;
+            background: linear-gradient(135deg, #f857a6, #ff5858, #00c6ff);
+            bottom: -60px;
+            right: -40px;
+            animation-duration: 16s;
+        }
+
+        @keyframes floatAnimation {
+            0% { transform: translateY(0) scale(1); }
+            100% { transform: translateY(-30px) scale(1.05); }
+        }
+
+        .glass-container {
+            width: 92%;
+            max-width: 1050px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 24px;
+            backdrop-filter: blur(30px);
+            -webkit-backdrop-filter: blur(30px);
+            border: 1px rgba(255, 255, 255, 0.08) solid;
+            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.6);
+            padding: 45px;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            padding-bottom: 22px;
+            margin-bottom: 35px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            max-width: 180px;
+            height: auto;
+        }
+
+        .logo-container img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            display: block;
+            border-radius: 12px;
+        }
+
+        nav a {
+            color: rgba(255, 255, 255, 0.65);
+            text-decoration: none;
+            margin-left: 28px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: 0.3s ease;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #00f2fe;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .form-section h2,
+        .info-section h2 {
+            color: #ffffff;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 18px;
+        }
+
+        .input-group label {
+            display: block;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .input-group input,
+        .input-group textarea,
+        .input-group select {
+            width: 100%;
+            padding: 14px 18px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            color: #fff;
+            font-size: 0.95rem;
+            outline: none;
+            transition: 0.3s ease;
+        }
+
+        .input-group input:focus,
+        .input-group textarea:focus,
+        .input-group select:focus {
+            border-color: #00f2fe;
+            background: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 0 10px rgba(0, 242, 254, 0.2);
+        }
+
+        .input-group select option {
+            background: #050508;
+            color: #fff;
+        }
+
+        .btn-whatsapp {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(90deg, #25D366, #128C7E);
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s ease;
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-whatsapp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px rgba(37, 211, 102, 0.4);
+        }
+
+        .info-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .info-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 14px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            text-decoration: none;
+            color: inherit;
+            transition: 0.3s ease;
+        }
+
+        .info-card:hover {
+            transform: translateX(5px);
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(0, 242, 254, 0.3);
+        }
+
+        .info-icon {
+            font-size: 1.5rem;
+            background: rgba(255, 255, 255, 0.03);
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            color: #00f2fe;
+        }
+
+        .info-text h4 {
+            color: #ffffff;
+            font-size: 1rem;
+            margin-bottom: 3px;
+        }
+
+        .info-text p,
+        .info-text a {
+            color: rgba(255, 255, 255, 0.65);
+            font-size: 0.85rem;
+            text-decoration: none;
+        }
+
+        .social {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .social a {
+            color: #00f2fe;
+            font-size: 1.5rem;
+            transition: 0.3s ease;
+        }
+
+        .social a:hover {
+            transform: scale(1.2);
+        }
+
+        .map-box {
+            width: 100%;
+            height: 220px;
+            border-radius: 14px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            margin-top: 20px;
+        }
+
+        .map-box iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            filter: grayscale(1) invert(1) contrast(1.2);
+        }
+
+        .typing-text{
+            color:#ffffff;
+            font-size:1.8rem;
+            margin-bottom:20px;
+            border-right:3px solid #00f2fe;
+            white-space:nowrap;
+            overflow:hidden;
+            width:fit-content;
+            animation:blink 0.8s infinite;
+        }
+
+        @keyframes blink{
+            50%{
+                border-color:transparent;
+            }
+        }
+
+        .loading-spinner {
+            width: 18px;
+            height: 18px;
+            border: 3px solid rgba(255,255,255,0.3);
+            border-top: 3px solid #fff;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            display: none;
+        }
+
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            background: rgba(0,0,0,0.95);
+            color: white;
+            padding: 25px 35px;
+            border-radius: 18px;
+            box-shadow: 0 0 20px #00f2fe;
+            text-align: center;
+            z-index: 1000;
+            transition: 0.3s ease;
+        }
+
+        .popup.active {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .popup button {
+            margin-top: 15px;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 10px;
+            background: #00f2fe;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .glass-container {
+                padding: 25px;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+                margin-bottom: 25px;
+            }
+
+            .logo-container {
+                max-width: 140px;
+            }
+
+            nav a {
+                margin: 0 10px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <div class="glass-container">
+
+        <header>
+            <div class="logo-container">
+                <img src="logo.jpg" alt="A-Tech Solutions Logo">
+            </div>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="data-recovery.html">Data Recovery</a>
+                <a href="software-services.html">Software Services</a>
+                <a href="contact.html" class="active">Contact Us</a>
+            </nav>
+        </header>
+
+        <div class="contact-grid">
+
+            <div class="form-section">
+                <h2 class="typing-text"></h2>
+
+                <form id="whatsappForm" onsubmit="sendToWhatsApp(); return false;">
+
+                    <div class="input-group">
+                        <label>Your Full Name</label>
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Phone Number</label>
+                        <input type="tel" id="phone" placeholder="+91 98765 43210" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <input type="email" id="email" placeholder="example@gmail.com">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Full Address</label>
+                        <input type="text" id="address" placeholder="Street, City, State" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Select Service</label>
+                        <select id="service" required>
+                            <option value="" disabled selected>Choose a Service</option>
+                            <option value="Premium Data Recovery">Premium Data Recovery</option>
+                            <option value="OS Installation & Upgrade">OS Installation & Upgrade</option>
+                            <option value="Malware & Virus Cleaning">Malware & Virus Cleaning</option>
+                            <option value="System Optimization">System Optimization</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Your Message</label>
+                        <textarea id="message" rows="5" placeholder="Write your message..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-whatsapp" id="submitBtn">
+                        <i class="fab fa-whatsapp"></i>
+                        <span id="btnText">Send via WhatsApp</span>
+                        <div class="loading-spinner" id="loader"></div>
+                    </button>
+                </form>
+            </div>
+
+            <div class="info-section">
+                <h2>Get In Touch</h2>
+
+                <div class="info-cards">
+
+                    <a href="tel:+918005068726" class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Phone</h4>
+                            <p>+91 8005068726</p>
+                        </div>
+                    </a>
+
+                    <a href="mailto:vishalhack602@gmail.com" class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Email</h4>
+                            <p>vishalhack602@gmail.com</p>
+                        </div>
+                    </a>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Address</h4>
+                            <p>Sidhari Azamgarh</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="social">
+                    <a href="https://wa.me/918005068726?text=Hello%20sir,%20I%20need%20data%20recovery%20and%20software%20service" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+
+                    <a href="tel:+918005068726">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+
+                <div class="map-box">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3584.577793340919!2d83.1911351!3d26.047367!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3991bd45751%3A0x8725662eccf19feb!2sA-mek%20Data%20Recovery%20%26%20PC%20Laptop%20Software%20Solution!5e0!3m2!1sen!2sin!4v1777279938496!5m2!1sen!2sin"
+                        allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <h3>✅ Message Sent!</h3>
+        <p>Opening WhatsApp...</p>
+        <p>Please press send button.</p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+
+    <audio id="successSound" src="allert.mp3"></audio>
+
+    <script>
+        const text = "Book a Premium Service";
+        const typingElement = document.querySelector(".typing-text");
+        let index = 0;
+
+        function typeEffect() {
+            if (index < text.length) {
+                typingElement.innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typeEffect, 100);
+            }
+        }
+
+        window.onload = function () {
+            typeEffect();
+        };
+
+        function sendToWhatsApp() {
+
+            var name = document.getElementById('name').value.trim();
+            var phone = document.getElementById('phone').value.trim();
+            const phonePattern = /^[6-9]\d{9}$/;
+
+            if(name.length < 3){
+                alert('Please enter valid name');
+                return;
+            }
+
+            if(!phonePattern.test(phone)){
+                alert('Please enter valid 10 digit Indian mobile number');
+                return;
+            }
+
+            document.getElementById('submitBtn').disabled = true;
+            document.getElementById('btnText').innerText = 'Sending...';
+            document.getElementById('loader').style.display = 'block';
+            var email = document.getElementById('email').value;
+            var address = document.getElementById('address').value;
+            var service = document.getElementById('service').value;
+            var message = document.getElementById('message').value;
+
+            var url = "https://wa.me/918005068726?text="
+                + "Name: " + encodeURIComponent(name) + "%0a"
+                + "Phone: " + encodeURIComponent(phone) + "%0a"
+                + "Email: " + encodeURIComponent(email) + "%0a"
+                + "Address: " + encodeURIComponent(address) + "%0a"
+                + "Service: " + encodeURIComponent(service) + "%0a"
+                + "Message: " + encodeURIComponent(message);
+
+            const sound = document.getElementById("successSound");
+
+            sound.play().catch((error) => {
+                console.log('Audio blocked:', error);
+            });
+
+            document.getElementById("popup").classList.add("active");
+
+            setTimeout(function () {
+                window.open(url, '_blank');
+
+                document.getElementById('submitBtn').disabled = false;
+                document.getElementById('btnText').innerText = 'Send via WhatsApp';
+                document.getElementById('loader').style.display = 'none';
+
+            }, 1000);
+
+            document.getElementById("whatsappForm").reset();
+        }
+
+        function closePopup() {
+            document.getElementById("popup").classList.remove("active");
+        }
+    </script>
+
+</body>
+</html>

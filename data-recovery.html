@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Recovery Services - A-Tech Solutions</title>
+    <style>
+        /* 1. Basic Reset & Main Background */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #050508;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+            position: relative;
+            padding: 40px 0;
+        }
+
+        /* 2. Live Animated Background Orbs */
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(25px);
+            opacity: 0.55;
+            z-index: 1;
+            animation: floatAnimation 12s infinite alternate ease-in-out;
+        }
+
+        .orb-1 {
+            width: 380px;
+            height: 380px;
+            background: linear-gradient(135deg, #00f2fe, #4facfe);
+            top: -60px;
+            left: -60px;
+            animation-duration: 14s;
+        }
+
+        .orb-2 {
+            width: 420px;
+            height: 420px;
+            background: linear-gradient(135deg, #f857a6, #ff5858, #00c6ff);
+            bottom: -60px;
+            right: -40px;
+            animation-duration: 16s;
+        }
+
+        @keyframes floatAnimation {
+            0% { transform: translateY(0) scale(1); }
+            100% { transform: translateY(-30px) scale(1.05); }
+        }
+
+        /* 3. Glassmorphic Container */
+        .glass-container {
+            width: 92%;
+            max-width: 1050px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 24px;
+            backdrop-filter: blur(30px);
+            -webkit-backdrop-filter: blur(30px);
+            border: 1px rgba(255, 255, 255, 0.08) solid;
+            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.6);
+            padding: 45px;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* 4. Navigation Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            padding-bottom: 22px;
+            margin-bottom: 35px;
+        }
+
+        .logo {
+            color: #ffffff;
+            font-size: 1.35rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .logo span {
+            background: linear-gradient(90deg, #00f2fe, #4facfe);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        nav a {
+            color: rgba(255, 255, 255, 0.65);
+            text-decoration: none;
+            margin-left: 28px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: 0.3s ease;
+        }
+
+        nav a:hover, nav a.active {
+            color: #00f2fe;
+        }
+
+        /* 5. Page Title */
+        .page-title {
+            color: #ffffff;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .page-subtitle {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 1rem;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        /* 6. Services Grid (कांच के छोटे डिब्बे) */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 35px;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 30px;
+            text-align: center;
+            transition: 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(0, 242, 254, 0.3);
+            box-shadow: 0 15px 30px rgba(0, 242, 254, 0.1);
+        }
+
+        .icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        .service-card h3 {
+            color: #ffffff;
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+        }
+
+        .service-card p {
+            color: rgba(255, 255, 255, 0.65);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        /* 7. Bottom Button */
+        .center-btn {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        .btn-back {
+            padding: 14px 35px;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-decoration: none;
+            background: linear-gradient(90deg, #00f2fe, #4facfe);
+            color: #050508;
+            box-shadow: 0 8px 20px rgba(0, 242, 254, 0.3);
+            transition: 0.3s ease;
+            border: none;
+        }
+
+        .btn-back:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 25px rgba(0, 242, 254, 0.5);
+        }
+
+        /* Responsive Settings */
+        @media (max-width: 768px) {
+            .glass-container { padding: 25px; }
+            header { flex-direction: column; gap: 15px; text-align: center; margin-bottom: 25px; }
+            nav a { margin: 0 12px; }
+            .page-title { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background Orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <!-- Main Container -->
+    <div class="glass-container">
+        
+        <!-- Header & Navigation -->
+        <header>
+            <div class="logo">
+                ⚡ <span>A-Tech</span> Solutions
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="data-recovery.html" class="active">Data Recovery</a>
+                <a href="software-services.html">Software Services</a>
+                <a href="contact_us.html">Contact Us</a>
+            </nav>
+        </header>
+
+        <!-- Section Title -->
+        <h1 class="page-title">Our Data Recovery Services</h1>
+        <p class="page-subtitle">We recover lost, deleted, or corrupted data from all types of storage media.</p>
+
+        <!-- Services Grid -->
+        <div class="services-grid">
+            
+            <!-- Card 1: Hard Drive -->
+            <div class="service-card">
+                <div class="icon">💾</div>
+                <h3>Hard Drive Recovery</h3>
+                <p>Complete recovery from internal/external HDD crashes, mechanical failures, and accidental formatting.</p>
+            </div>
+
+            <!-- Card 2: SSD Recovery -->
+            <div class="service-card">
+                <div class="icon">⚡</div>
+                <h3>SSD Data Recovery</h3>
+                <p>Advanced data extraction from failed, dead, or unreadable Solid State Drives (SSD) safely.</p>
+            </div>
+
+            <!-- Card 3: USB & SD Cards -->
+            <div class="service-card">
+                <div class="icon">🔌</div>
+                <h3>USB & SD Card Recovery</h3>
+                <p>Instant recovery from corrupted flash drives, memory cards, and external media blocks.</p>
+            </div>
+
+        </div>
+
+        <!-- Back to Home Button -->
+        <div class="center-btn">
+            <a href="index.html" class="btn-back">Back To Home</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

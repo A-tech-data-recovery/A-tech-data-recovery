@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Tech Data Recovery & PC Laptop Software Solution</title>
+    <style>
+        /* 1. Basic Reset & Main Background */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #050508;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* 2. Live Animated Background Orbs */
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(25px);
+            opacity: 0.55;
+            z-index: 1;
+            animation: floatAnimation 12s infinite alternate ease-in-out;
+        }
+
+        .orb-1 {
+            width: 380px;
+            height: 380px;
+            background: linear-gradient(135deg, #00f2fe, #4facfe);
+            top: -60px;
+            left: -60px;
+            animation-duration: 14s;
+        }
+
+        .orb-2 {
+            width: 420px;
+            height: 420px;
+            background: linear-gradient(135deg, #f857a6, #ff5858, #00c6ff);
+            bottom: -60px;
+            right: -40px;
+            animation-duration: 16s;
+        }
+
+        .orb-3 {
+            width: 220px;
+            height: 220px;
+            background: linear-gradient(135deg, #38ef7d, #11998e);
+            bottom: -90px;
+            left: 25%;
+            animation-duration: 11s;
+        }
+
+        @keyframes floatAnimation {
+            0% { transform: translateY(0) scale(1) rotate(0deg); }
+            50% { transform: translateY(-35px) scale(1.05) rotate(90deg); }
+            100% { transform: translateY(15px) scale(0.95) rotate(180deg); }
+        }
+
+        /* 3. Glassmorphic Main Container */
+        .glass-container {
+            width: 92%;
+            max-width: 1050px;
+            height: auto;
+            min-height: 560px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 24px;
+            backdrop-filter: blur(30px);
+            -webkit-backdrop-filter: blur(30px);
+            border: 1px rgba(255, 255, 255, 0.08) solid;
+            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.6);
+            padding: 30px 45px;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* 4. Premium Navigation Header with Responsive Logo */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            padding-bottom: 15px;
+        }
+
+        /* Responsive Logo Container */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            max-width: 180px; 
+            height: auto;
+        }
+
+        .logo-container img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            display: block;
+            border-radius: 12px;
+        }
+
+        nav a {
+            color: rgba(255, 255, 255, 0.65);
+            text-decoration: none;
+            margin-left: 28px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: 0.3s ease;
+        }
+
+        nav a:hover, nav a.active {
+            color: #00f2fe;
+        }
+
+        /* 5. Main Content Area */
+        .content {
+            margin: 40px 0;
+            max-width: 680px;
+        }
+
+        .content h1 {
+            color: #ffffff;
+            font-size: 3.2rem;
+            font-weight: 700;
+            line-height: 1.15;
+            margin-bottom: 22px;
+            text-shadow: 0 4px 12px rgba(0,0,0,0.4);
+        }
+
+        .content p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.05rem;
+            line-height: 1.65;
+            margin-bottom: 35px;
+        }
+
+        /* 6. Buttons Styling */
+        .btn-group {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 14px 35px;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: linear-gradient(90deg, #00f2fe, #4facfe);
+            color: #050508;
+            box-shadow: 0 8px 20px rgba(0, 242, 254, 0.3);
+            border: none;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 25px rgba(0, 242, 254, 0.5);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.04);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-4px);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Responsive Settings for Mobile Devices */
+        @media (max-width: 768px) {
+            .glass-container { padding: 25px; min-height: auto; }
+            header { flex-direction: column; gap: 15px; text-align: center; padding-bottom: 20px; }
+            
+            /* Responsive logo size on mobile */
+            .logo-container { max-width: 140px; } 
+            
+            nav a { margin: 0 12px; font-size: 0.9rem; }
+            .content h1 { font-size: 2.1rem; }
+            .btn-group { flex-direction: column; }
+            .btn { text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Live Animated Background Orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <!-- Main Glassmorphic Wrapper -->
+    <div class="glass-container">
+        
+        <!-- Header & Navigation -->
+        <header>
+            <!-- Responsive image logo container -->
+            <div class="logo-container">
+                <img src="logo.jpg" alt="A-Tech Solutions Logo">
+            </div>
+            <nav>
+                <a href="index.html" class="active">Home</a>
+                <a href="data-recovery.html">Data Recovery</a>
+                <a href="software-services.html">Software Services</a>
+                <a href="contact_us.html">Contact Us</a>
+            </nav>
+        </header>
+
+        <!-- Main Hero Section -->
+        <div class="content">
+            <h1>Expert Data Recovery & Software Solutions</h1>
+            <p>Lost your critical files? We specialize in professional data recovery from crashed hard drives, SSDs, corrupted flash drives, and dead laptops. Get secure data retrieval and fast software diagnostics for all your PC and laptop issues.</p>
+            
+            <!-- Call To Actions -->
+            <div class="btn-group">
+                <a href="contact_us.html" class="btn btn-primary">Get Free Consultation</a>
+                <a href="data-recovery.html" class="btn btn-secondary">Explore Services</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
